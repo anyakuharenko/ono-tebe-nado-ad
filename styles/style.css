@@ -21,7 +21,7 @@
 body {
   margin: 0 auto;
   width: 1100px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif; /* Убрали альтернативный шрифт, оставили только Raleway */
   background-color: #000;
   color: #fff;
   display: flex;
@@ -33,7 +33,7 @@ a {
   color: inherit;
 }
 
-/* --- ШАПКА (ЧЕРНАЯ, КАК НА МАКЕТЕ) --- */
+/* --- ШАПКА --- */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -51,7 +51,7 @@ a {
   list-style: circle;
   list-style-position: outside;
   font-size: 18px;
-  white-space: nowrap; /* Запрет переноса текста */
+  white-space: nowrap; /* Запрет переноса */
 }
 
 .header__menu-item:first-child {
@@ -81,9 +81,9 @@ a {
   font-style: normal;
   font-size: 18px;
   line-height: 1.35;
-  max-width: none; /* Убрали ограничение */
+  max-width: none;
   justify-self: end;
-  white-space: nowrap; /* Запрет переноса текста */
+  white-space: nowrap; /* Запрет переноса */
 }
 
 .address__link {
@@ -125,9 +125,18 @@ a {
   letter-spacing: 0.3em;
 }
 
-.aligned-text_left { text-align: left; }
-.aligned-text_center { text-align: center; }
-.aligned-text_right { text-align: right; }
+/* ИСПРАВЛЕНО: теперь скобки на новых строках */
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
 
 .cover__description {
   position: relative;
@@ -206,11 +215,22 @@ a {
   background-position: center;
 }
 
-.card_type_film { background-image: url('../images/card-lot-01.jpg'); }
-.card_type_book { background-image: url('../images/card-lot-02.jpg'); }
-.card_type_picture { background-image: url('../images/card-lot-03.jpg'); }
+/* ИСПРАВЛЕНО: скобки на новых строках */
+.card_type_film {
+  background-image: url('../images/card-lot-01.jpg');
+}
 
-.card .overlay { z-index: 1; }
+.card_type_book {
+  background-image: url('../images/card-lot-02.jpg');
+}
+
+.card_type_picture {
+  background-image: url('../images/card-lot-03.jpg');
+}
+
+.card .overlay {
+  z-index: 1;
+}
 
 .card__title,
 .card__text {
