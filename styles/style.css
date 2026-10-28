@@ -103,9 +103,18 @@ a {
   gap: 20px;
 }
 
-.aligned-text_left { text-align: left; }
-.aligned-text_center { text-align: center; }
-.aligned-text_right { text-align: right; }
+/* ИСПРАВЛЕНО: разбито на строки */
+.aligned-text_left { 
+  text-align: left; 
+}
+
+.aligned-text_center { 
+  text-align: center; 
+}
+
+.aligned-text_right { 
+  text-align: right; 
+}
 
 .cover__description {
   position: relative;
@@ -120,7 +129,7 @@ a {
   margin: 0;
   font-size: 20px;
   letter-spacing: 0.1em;
-  text-transform: uppercase; /* Добавили капс, как в макете */
+  text-transform: uppercase;
 }
 
 .bet-button {
@@ -156,16 +165,16 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
-  align-items: stretch; /* Выравниваем карточки по высоте */
+  align-items: stretch;
 }
 
 .lots__card-list-item {
-  flex: 1; /* Карточки делят место поровну */
+  flex: 1;
 }
 
 .card-link {
   display: block;
-  height: 100%; /* Ссылка занимает всю высоту карточки */
+  height: 100%;
 }
 
 .card {
@@ -173,16 +182,25 @@ a {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Заголовок сверху, текст снизу */
-  height: 100%; /* Карточка растягивается на всю высоту */
+  justify-content: space-between;
+  height: 100%;
   box-sizing: border-box;
   background-size: cover;
   background-position: center;
 }
 
-.card_type_film { background-image: url('../images/card-lot-01.jpg'); }
-.card_type_book { background-image: url('../images/card-lot-02.jpg'); }
-.card_type_picture { background-image: url('../images/card-lot-03.jpg'); }
+/* ИСПРАВЛЕНО: разбито на строки */
+.card_type_film { 
+  background-image: url('../images/card-lot-01.jpg'); 
+}
+
+.card_type_book { 
+  background-image: url('../images/card-lot-02.jpg'); 
+}
+
+.card_type_picture { 
+  background-image: url('../images/card-lot-03.jpg'); 
+}
 
 .card .overlay {
   z-index: 1;
@@ -247,7 +265,7 @@ a {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 40px;
-  text-transform: uppercase; /* Добавили капс, как в макете */
+  text-transform: uppercase;
 }
 
 .about__text p {
