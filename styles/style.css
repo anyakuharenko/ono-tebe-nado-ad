@@ -47,21 +47,22 @@ a {
   display: flex;
   gap: 32px;
   margin: 0;
-  padding: 0;
-  list-style: circle;
-  list-style-position: outside;
+  padding: 0 0 0 16px;
+  list-style-type: circle;
   font-size: 18px;
   white-space: nowrap;
-  font-family: 'Raleway';
 }
 
-.header__menu-item:first-child {
+.header__menu-item_no-bullet {
   list-style-type: none;
 }
 
 .header__menu-link {
   text-transform: lowercase;
-  font-family: 'Raleway';
+}
+
+.header__menu-link_active {
+  border-bottom: none;
 }
 
 .header__logo {
@@ -83,14 +84,17 @@ a {
   font-style: normal;
   font-size: 18px;
   line-height: 1.35;
-  max-width: none;
+  max-width: 240px;
   justify-self: end;
   white-space: nowrap;
-  font-family: 'Raleway';
 }
 
 .address__link {
   border-bottom: 1px solid currentColor;
+}
+
+.address__text {
+  margin: 0;
 }
 
 /* --- ОБЛОЖКА --- */
@@ -127,7 +131,6 @@ a {
   gap: 20px;
   letter-spacing: 0.3em;
   margin-right: -0.3em;
-  font-family: 'Raleway';
 }
 
 .aligned-text_left {
@@ -156,7 +159,6 @@ a {
   font-size: 22px;
   word-spacing: 18px;
   text-transform: uppercase;
-  font-family: 'Raleway';
 }
 
 .bet-button {
@@ -185,7 +187,6 @@ a {
   font-size: 40px;
   margin: 0 0 27px 40px;
   text-transform: uppercase;
-  font-family: 'Raleway';
 }
 
 .lots__card-list {
@@ -241,7 +242,6 @@ a {
   position: relative;
   z-index: 2;
   margin: 0;
-  font-family: 'Raleway';
 }
 
 .card__title {
@@ -262,7 +262,6 @@ a {
   margin: 30px 0 0 40px;
   font-size: 20px;
   border-bottom: 1px solid currentColor;
-  font-family: 'Raleway';
 }
 
 /* --- СЕКЦИЯ ОБ АУКЦИОНЕ --- */
@@ -280,6 +279,8 @@ a {
 }
 
 .about__column_logo {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -303,7 +304,6 @@ a {
   font-size: 40px;
   margin: 0 0 24px 0;
   text-transform: uppercase;
-  font-family: 'Raleway';
 }
 
 .about__text {
@@ -316,7 +316,6 @@ a {
   font-size: 20px;
   line-height: 1.2;
   margin: 0;
-  font-family: 'Raleway';
 }
 
 /* --- ПОДВАЛ --- */
@@ -330,15 +329,13 @@ a {
 
 .footer__address {
   justify-self: start;
-  align-items: flex-start;
-  text-align: left;
 }
 
 .footer__menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -348,7 +345,6 @@ a {
 .footer__menu-link {
   font-size: 18px;
   text-transform: lowercase;
-  font-family: 'Raleway';
 }
 
 .footer__social-list {
